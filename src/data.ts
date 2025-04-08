@@ -1,4 +1,4 @@
-function generateMockData(size: number): string[] {
+export function generateMockData(size: number): string[] {
   const mockData: string[] = [];
 
   for (let i = 0; i < size; i++) {
