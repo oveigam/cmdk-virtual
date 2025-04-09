@@ -1,6 +1,7 @@
 import { WithShad } from "./withshad";
 import { Noshad } from "./noshad";
-import { ComboboxDemo } from "./shadexample";
+import { Separated } from "./separated";
+import { NoVirtualization } from "./novirtualization";
 
 function App() {
   return (
@@ -10,10 +11,17 @@ function App() {
         <WithShad />
       </div>
       <div className="flex flex-col gap-2">
+        <span>Separated components</span>
+        <Separated />
+      </div>
+      <div className="flex flex-col gap-2">
+        <span>No virtualization</span>
+        <NoVirtualization />
+      </div>
+      <div className="flex flex-col gap-2">
         <span>No shadcn</span>
         <Noshad />
       </div>
-      <ComboboxDemo />
     </div>
   );
 }
